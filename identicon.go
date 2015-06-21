@@ -93,7 +93,7 @@ func (icon *identicon) Render(data []byte) []byte {
 	}
 	h >>= 24
 
-	img := image.NewPaletted(image.Rect(0, 0, maxX, maxY), color.Palette{color.NRGBA{0xf0, 0xf0, 0xf0, 0xff}, nrgba})
+	img := image.NewPaletted(image.Rect(0, 0, maxX, maxY), color.Palette{color.NRGBA{0xf0, 0xf0, 0xf0, 0x00}, nrgba})
 
 	sqx := 0
 	sqy := 0
